@@ -6,35 +6,11 @@ Key Objectives: This project analyzes and visualizes worldwide patterns, trends,
 Status: This project is in-progress as of March 14, 2024.
 
 ```python
-# This Python 3 environment comes with many helpful analytics libraries installed
-# It is defined by the kaggle/python Docker image: https://github.com/kaggle/docker-python
-# For example, here's several helpful packages to load
-
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import matplotlib.pyplot as plt # plotting
 import os # file directory handling
 import xml.etree.ElementTree as ET # create, parse, modify XML data
-
-# Input data files are available in the read-only "../input/" directory
-# For example, running this (by clicking run or pressing Shift+Enter) will list all files under the input directory
-
-"""
-import os
-for dirname, _, filenames in os.walk('/kaggle/input'):
-    for filename in filenames:
-        print(os.path.join(dirname, filename))
-"""
-# You can write up to 20GB to the current directory (/kaggle/working/) that gets preserved as output when you create a version using "Save & Run All" 
-# You can also write temporary files to /kaggle/temp/, but they won't be saved outside of the current session
-```
-
-
-
-
-    "\nimport os\nfor dirname, _, filenames in os.walk('/kaggle/input'):\n    for filename in filenames:\n        print(os.path.join(dirname, filename))\n"
-
-
 
 # **Introduction**
 Clinical trials play a pivotal role in advancing medical research, shaping healthcare policies and improving patient outcomes worldwide. Understanding the global landscape of clinical trials provides valuable insights into emerging health challenges, treatment trends, and research priorities.
@@ -48,7 +24,6 @@ This project analyzes and visualizes worldwide patterns, trends, and disparities
 
 **About the Dataset**:
 This dataset is originally sourced from ClinicalTrials.gov and made available on Kaggle. ClinicalTrials.gov is maintained by the U.S. National Library of Medicine (NLM), and is a public database of clinical trial research studies and their results.The Kaggle dataset was last updated on May 8th, 2020 and contains 338k clinical trials. Each of these entries are stored in XML format, containing information on each studies such as the status, phase, eligibility criteria, and the health condition in question. 
-
 
 ```python
 # Directory containing all the folders with the XML data files
@@ -137,23 +112,7 @@ df.head()
 
 ```
 
-
-
-
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -307,8 +266,6 @@ df.head()
 <p>5 rows × 26 columns</p>
 </div>
 
-
-
 **Cleaning the Dataset**
 
 
@@ -318,23 +275,7 @@ conditions = df[['Condition']]
 conditions
 ```
 
-
-
-
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -391,5 +332,19 @@ conditions
 </table>
 <p>103507 rows × 1 columns</p>
 </div>
+
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
 
 
