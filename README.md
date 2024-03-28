@@ -11,6 +11,7 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import matplotlib.pyplot as plt # plotting
 import os # file directory handling
 import xml.etree.ElementTree as ET # create, parse, modify XML data
+```
 
 # **Introduction**
 Clinical trials play a pivotal role in advancing medical research, shaping healthcare policies and improving patient outcomes worldwide. Understanding the global landscape of clinical trials provides valuable insights into emerging health challenges, treatment trends, and research priorities.
@@ -108,7 +109,7 @@ for folder in os.listdir(main_directory):
 
 # Create a DataFrame from the list of dictionaries
 df = pd.DataFrame(data_list)
-df.head()
+df
 
 ```
 
