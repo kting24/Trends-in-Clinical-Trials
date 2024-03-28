@@ -1,18 +1,3 @@
-# Trends in Clinical Trials
-Clinical trials play a pivotal role in advancing medical research, shaping healthcare policies and improving patient outcomes worldwide. Understanding the global landscape of clinical trials provides valuable insights into emerging health challenges, treatment trends, and research priorities.
-
-Key Objectives: This project analyzes and visualizes worldwide patterns, trends, and disparities in clinical trials. Ultimately, the project aims to provide a comprehensive view of the state of medical research world-wide.
-
-Status: This project is in-progress as of March 14, 2024.
-
-```python
-import numpy as np # linear algebra
-import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
-import matplotlib.pyplot as plt # plotting
-import os # file directory handling
-import xml.etree.ElementTree as ET # create, parse, modify XML data
-```
-
 # **Introduction**
 Clinical trials play a pivotal role in advancing medical research, shaping healthcare policies and improving patient outcomes worldwide. Understanding the global landscape of clinical trials provides valuable insights into emerging health challenges, treatment trends, and research priorities.
 
@@ -27,6 +12,12 @@ This project analyzes and visualizes worldwide patterns, trends, and disparities
 This dataset is originally sourced from ClinicalTrials.gov and made available on Kaggle. ClinicalTrials.gov is maintained by the U.S. National Library of Medicine (NLM), and is a public database of clinical trial research studies and their results.The Kaggle dataset was last updated on May 8th, 2020 and contains 338k clinical trials. Each of these entries are stored in XML format, containing information on each studies such as the status, phase, eligibility criteria, and the health condition in question. 
 
 ```python
+import numpy as np # linear algebra
+import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+import matplotlib.pyplot as plt # plotting
+import os # file directory handling
+import xml.etree.ElementTree as ET # create, parse, modify XML data
+
 # Directory containing all the folders with the XML data files
 main_directory = "/kaggle/input/all-clinical-trials"
 
