@@ -5,4 +5,4 @@ Key Objectives: This project analyzes and visualizes worldwide patterns, trends,
 
 Status: This project is in-progress as of March 14, 2024.
 
-View current progress [here](https://github.com/kting24/Trends-in-Clinical-Trials/blob/main/clinical-trials.ipynb)
+View current progress [here](https://github.com/kting24/Trends-in-Clinical-Trials/blob/main/clinical-trials.ipynb).
