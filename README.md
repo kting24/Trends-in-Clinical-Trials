@@ -4,3 +4,5 @@ Clinical trials play a pivotal role in advancing medical research, shaping healt
 Key Objectives: This project analyzes and visualizes worldwide patterns, trends, and disparities in clinical trials. Ultimately, the project aims to provide a comprehensive view of the state of medical research world-wide.
 
 Status: This project is in-progress as of March 14, 2024.
+
+View current progress [here](https://github.com/kting24/Trends-in-Clinical-Trials/blob/main/clinical-trials.ipynb)
